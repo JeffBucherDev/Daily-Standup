@@ -8,7 +8,7 @@ function solution(str){
 
 
 
-// without methods
+// without any methods
 
 function solution(str){
     let o = '';
