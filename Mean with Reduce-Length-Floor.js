@@ -23,3 +23,9 @@ function getAverage(arr){
   console.log(getAverage([2,2,2,2]), 2)
   console.log(getAverage([100,90,80,70,60]), 80)
   console.log(getAverage([32, 21, 14,55, 93]), 43)
+
+ 
+ // One Line
+  function getAverage(arr){
+    return Math.floor(arr.reduce((a,c) => a + c, 0) / arr.length)
+  }
