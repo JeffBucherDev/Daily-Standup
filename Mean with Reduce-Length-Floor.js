@@ -29,3 +29,13 @@ function getAverage(arr){
   function getAverage(arr){
     return Math.floor(arr.reduce((a,c) => a + c, 0) / arr.length)
   }
+
+  // no methods
+
+  function getAverage(arr){
+      let sum = 0;
+      for(let i = 0; i < arr.length; i++){
+          sum+= arr[i]
+      }
+      return Math.floor(sum / arr.length)
+  }
