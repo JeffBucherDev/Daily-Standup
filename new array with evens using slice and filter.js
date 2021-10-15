@@ -20,8 +20,8 @@ P = 1.loop through and remove all even numbers
 
 */
 
-function extractEndEvens(arr, numOfEvenNums) {
-return arr.filter(num => num % 2 === 0).slice(-numOfEvenNums)
+function extractEndEvens(arr, num) {
+return arr.filter(e => e % 2 === 0).slice(-num)
 }
 
 console.log(extractEndEvens([1, 2, 3, 4, 5, 6, 7, 8, 9], 3), [4, 6, 8])
