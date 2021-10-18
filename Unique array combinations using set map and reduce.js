@@ -36,16 +36,23 @@ return sumOfUniqueArrays
 
 // One Line
 
-function numberOfUniqueArrays(arr){
+function arrCombinations(arr){
     // 1. remove any duplicates from the arrays
     // 2. get the length of the arrays and multiply the lengths together
     // 3. return the solution of step 2
     return arr.map(x => [...new Set(x)]).reduce((a,c) => a * c.length, 1)
 }
     
+// using set size
+
+function arrCombinations(arr){
+    // 1. remove any duplicates from the arrays
+    // 2. get the length of the arrays and multiply the lengths together
+    // 3. return the solution of step 2
+    return arr.map(x => new Set(x).size).reduce((a,c) => a * c, 1)
+}
     
     
-    
-    console.log(numberOfUniqueArrays([[2,6,4], [4,1,3], [2,3,1]]), 27)
-    console.log(numberOfUniqueArrays([[2,6,4], [4,1,6,1,2], [2,3,1]]), 36)
-    console.log(numberOfUniqueArrays([[2,6,4,2,1], [0,1,4,1,3], [2,3,1]]), 48)
+    console.log(arrCombinations([[2,6,4], [4,1,3], [2,3,1]]), 27)
+    console.log(arrCombinations([[2,6,4], [4,1,6,1,2], [2,3,1]]), 36)
+    console.log(arrCombinations([[2,6,4,2,1], [0,1,4,1,3], [2,3,1]]), 48)
