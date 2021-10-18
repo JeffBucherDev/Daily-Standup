@@ -38,9 +38,8 @@ return sumOfUniqueArrays
 
 function numberOfUniqueArrays(arr){
     // 1. remove any duplicates from the arrays
-    // 2. take the length of the arrays
-    // 3. multiply the lengths together
-    // 4. return the solution of step 3
+    // 2. get the length of the arrays and multiply the lengths together
+    // 3. return the solution of step 2
     return arr.map(x => [...new Set(x)]).reduce((a,c) => a * c.length, 1)
 }
     
