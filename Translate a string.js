@@ -24,6 +24,14 @@ function stringConverter(str){
    })
    return convertedArray.join('')     
    }
+
+   // cleaned up
+   function stringConverter(str){
+       return str.toLowerCase()
+                    .split('')
+                    .map((el, ind, arr)=> arr.indexOf(el) === arr.lastIndexOf(el) ? '(' : ')')
+                    .join('')
+   }
    
    console.log(stringConverter('poop'), '))))')
    console.log(stringConverter('hola'), '((((')
