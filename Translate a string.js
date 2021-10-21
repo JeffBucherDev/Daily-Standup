@@ -14,7 +14,7 @@ P = 1. convert string into array
 */
 
 function stringConverter(str){
-    let newArr = str.toUpperCase().split('')
+    let newArr = str.toLowerCase().split('')
     let convertedArray = newArr.map(x => {
      if (newArr.indexOf(x) == newArr.lastIndexOf(x)){
        return '('
